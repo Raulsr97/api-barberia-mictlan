@@ -1,0 +1,40 @@
+# 🔧 Archivos de entorno (Información sensible)
+.env
+.env.local
+.env.*.local
+
+# 🔧 Dependencias instaladas
+node_modules/
+
+# 🔧 Archivos de bloqueo de dependencias
+package-lock.json
+yarn.lock
+
+# 🔧 Logs del sistema
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🔧 Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# 🔧 Configuración del editor (VS Code, WebStorm)
+.vscode/
+.idea/
+
+# 🔧 Archivos temporales de desarrollo
+*.tmp
+*.swp
+
+# 🔧 Configuración de Sequelize CLI
+config/config.json
+
+# 🔧 Archivos de compilación o cache (si usas TypeScript)
+dist/
+.cache/
+
+# 🔧 Configuración de Docker (si usas Docker)
+docker-compose.yml
+Dockerfile
