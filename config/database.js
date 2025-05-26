@@ -1,5 +1,6 @@
 require('dotenv').config()
 const { Sequelize } = require('sequelize')
+const setupModels = require('../models/index')
 
 const sequelize = new Sequelize(
     process.env.DB_NAME,
@@ -12,5 +13,8 @@ const sequelize = new Sequelize(
         logging: false
     }
 )
+
+// Aqui cargamos los modelos
+setupModels(sequelize)
 
 module.exports = sequelize

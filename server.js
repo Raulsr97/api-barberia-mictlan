@@ -1,10 +1,14 @@
 require('dotenv').config()
 const express = require('express')
 const sequelize = require('./config/database')
-const app = express()
+const setupModels = require('./models/index')
 
+const app = express()
 // middleware
 app.use(express.json())
+
+//Cargar modelos
+setupModels(sequelize)
 
 // Test de la conexion a la base de datos
 sequelize
