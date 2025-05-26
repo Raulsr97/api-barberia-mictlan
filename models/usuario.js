@@ -18,10 +18,6 @@ const UsuarioSchema = {
     allowNull: false,
     unique: true
   },
-  fecha_registro: {
-    type: DataTypes.DATE,
-    defaultValue: Sequelize.NOW
-  },
   createdAt: {
     allowNull: false,
     type: DataTypes.DATE,
