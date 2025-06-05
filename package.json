@@ -11,7 +11,7 @@
     "seed": "npx sequelize-cli db:seed:all",
     "seed:undo": "npx sequelize-cli db:seed:undo:all",
     "model": "npx sequelize-cli model:generate",
-    "migration": "npx sequelize-cli migration:generate",
+    "migration": "npx sequelize-cli migration:generate --name",
     "start": "node server.js"
   },
   "keywords": [],
